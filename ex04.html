@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="ex01.html" method="get">
+	<div>웹 브라우저 전체 공간에 대한 분할</div>
+	<span>웹 브라우저 일부 영역만 분할</span>
+	<div style="background: hotpink">
+		<span style="background: peru">일부 분할</span>
+		<span style="background: tan">일부 분할</span>
+	</div>
+<hr>
+정규표현식 : 문자열을 표현하는 하나의 방식<br>
+	<form action="">
+		<input type="text" required="required" placeholder="아이디"><br>
+		<input type="email" required="required"><br>
+		<input type="tel" required="required" pattern="\d{3}-\d{4}-\d{4}" placeholder="예)010-1234-5678"><br><!-- \d{3} 십진수{세자리} -->
+		<input type="text" readonly="readonly" value="읽기 전용. 수정 안됨"><br>
+		<input type="submit" value="회원가입">
+		<input type="button" disabled="disabled" value="버튼">
+	</form>
+	<hr>
+	10대<input type="radio" name="age" value="10"><br>
+	20대<input type="radio" name="age" value="20"><br>
+	30대<input type="radio" name="age" value="30">
+	
+	<fieldset>
+		<legend>취미 조사</legend>
+		<input id="id"><br>
+		
+		<label for="h1">책읽기</label>
+		<input id="h1" type="checkbox" name="hobby" value="책">
+		
+		<label>멍</label>
+		<input type="checkbox" name="hobby" value="멍">
+		
+		<label for="id">아이디</label>
+	</fieldset>
+	<select name="sel" size="1">
+		<option value="p1">사과
+		<option value="p2">수박
+		<option value="p3">고구마
+		
+	</select><br>
+	<input type="text" name="test"><br>
+	<input type="submit" value="input submit">
+	<button type="submit">button submit</button>
+</form>
+<hr>
+form태그의 중요한 속성은 action과 method가 있다<br>
+action : 다른 페이지로 이동할 경로 설정<br>
+method : 전송방식 결정. 없으면 기본 GET 방식<br>
+	-get<br>
+	  - url뒤에 파라미터를 붙여서 데이터를 전송<br>
+	  - 데이터를 전송하는 경우 최대 글자수는 2048<br>
+	  - url에 값이 보이기 때문에 보안에 취약하다고 할 수 있다<br>
+	-post<br>
+	  - HTTP body에 담아서 데이터를 전송하는 방식<br>
+	  - http에 묶어서 보내기 때문에 대용량의 데이터를 보낼 때 사용<br>
+	  - GET방식보다 보안상 우위에 있다고 표현<br>
+	  
+	<form>
+		<input type="text" placeholder="input name"><br>
+		<input type="text" placeholder="input address"><br>
+		<textarea row="3" cols="50"></textarea><br>
+		<input type="reset" value="초기화"><br>
+		<input type="submit" value="전송"><br>
+		<input type="button" value="버튼"><br>
+	</form>
+	<hr>
+	책 읽기<input type="checkbox"><br>
+	멍 타기<input type="checkbox" checked="checked"><br>
+	비<input type="checkbox"><br>
+	<hr>
+	10대<input type="radio" name="age"><br>
+	20대<input type="radio" name="age"><br>
+	30대<input type="radio" name="age" checked="checked"><br><!-- checked="checked"는 실행 시 체크되어 있음 -->
+	40대<input type="radio" name="age"><br>
+	<hr>
+	<input type="button" value="버튼"><br>
+	<input type="submit" value="전송"><br>
+	<input type="reset" value="초기화"><br>
+	<input type="image" src="다운로드.jpeg" width="50" alt="이미지 사용시 꼭 넣어야 하는 속성"><br>
+	<img src="다운로드.jpeg" alt="이미지 사용시 꼭 넣음" width="50"><br>
+	<input type="file" value="파일"><br>
+	<hr>
+	<input type="text" value="텍스트" size="10" maxlength="5"><br>
+	<input type="password" value="비밀번호"><br>
+	<input type="email" placeholder="test@test.com"><br>
+	<input type="search" placeholder="검색어 입력"><br>
+	<input type="tel" value="010-1111-1111"><br>
+	<input type="number" value="1" min="1" max="10"><br>
+	<hr>
+	<input type="color"><br>
+	<input type="range"><br>
+	<input type="radio"><br>
+	<input type="checkbox"><br>
+	<input type="hidden" value="감추기"><br>
+</body>
+</html>
